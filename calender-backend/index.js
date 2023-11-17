@@ -11,7 +11,12 @@ const app = express();
 dbConnection();
 
 // Cors
-app.use(cors());
+app.use(cors({
+    origin:["https://calendar-scheduler-2nhq.onrender.com/login"],
+    methods:["POST","GET"],
+    credentials:true
+    
+}));
 
 // Directorio publico, use = middleware
 app.use(express.static('public'));

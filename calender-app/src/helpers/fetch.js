@@ -1,7 +1,7 @@
 const baseUrl = process.env.REACT_APP_API_URL;
 
 const fetchWithoutToken = (endpoint, data, method = 'GET') => {
-  const url = `https://calendar-scheduler-api.onrender.com/${endpoint}`; // localhost:8000/api/endpoint
+ // const url = `https://calendar-scheduler-api.onrender.com/${endpoint}`; // localhost:8000/api/endpoint
 
   if (method === 'GET') {
     return fetch(url);

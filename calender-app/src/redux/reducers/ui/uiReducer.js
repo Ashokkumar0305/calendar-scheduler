@@ -22,4 +22,3 @@ export const uiReducer = (state = INITIAL_STATE, action) => {
       return state;
   }
  };
- role

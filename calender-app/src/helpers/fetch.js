@@ -17,7 +17,7 @@ const fetchWithoutToken = (endpoint, data, method = 'GET') => {
 };
 
 const fetchWithToken = (endpoint, data, method = 'GET') => {
-  const url = `${https://calendar-scheduler-api.onrender.com/}/${endpoint}`; // localhost:8000/api/endpoint
+  const url = `https://calendar-scheduler-api.onrender.com/${endpoint}`; // localhost:8000/api/endpoint
   const token = localStorage.getItem('token') || '';
 
   if (method === 'GET') {
